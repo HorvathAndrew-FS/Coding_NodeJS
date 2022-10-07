@@ -1,6 +1,6 @@
-#Node JS app
+# Node JS app
 
-### Andrew Horvath
+## Andrew Horvath
 
 ## To run app
 
