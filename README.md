@@ -1,5 +1,7 @@
 #Node JS app
 
+### Andrew Horvath
+
 ## To run app
 
 ```shell
