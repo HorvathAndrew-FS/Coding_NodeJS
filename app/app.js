@@ -11,6 +11,26 @@ app.get('/', (req,res,next) => {
         message: 'Using GET /',
     });
 });
+
+app.post('/', (req, res, next) => {
+    res.status(201).json({
+        message: 'Using POST /',
+    });
+});
+
+app.patch('/', (req, res, next) => {
+    res.status(200).json({
+        message: 'Using PATCH /',
+    });
+});
+
+app.delete('/', (req, res, next) => {
+    res.status(204).json({
+        message: 'Using Delete /'
+    });
+});
+
+
 //req.body.firstName
 //cors
 //localhost:3000/example
