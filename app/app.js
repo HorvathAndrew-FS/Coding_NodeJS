@@ -9,24 +9,44 @@ app.use(express.json());
 app.get('/', (req,res,next) => {
     res.status(200).json({
         message: 'Using GET /',
+        metadata: {
+            Host: req.hostname,
+            Port: process.env.port,
+            Method: req.method,
+        },
     });
 });
 
 app.post('/', (req, res, next) => {
     res.status(201).json({
         message: 'Using POST /',
+        metadata: {
+            Host: req.hostname,
+            Port: process.env.port,
+            Method: req.method,
+        },
     });
 });
 
-app.patch('/', (req, res, next) => {
+app.patch('/:id', (req, res, next) => {
     res.status(200).json({
         message: 'Using PATCH /',
+        metadata: {
+            Host: req.hostname,
+            Port: process.env.port,
+            Method: req.method,
+        },
     });
 });
 
-app.delete('/', (req, res, next) => {
-    res.status(204).json({
-        message: 'Using Delete /'
+app.delete('/:id', (req, res, next) => {
+    res.status(202).json({
+        message: 'Using Delete /',
+        metadata: {
+            Host: req.hostname,
+            Port: process.env.port,
+            Method: req.method,
+        },
     });
 });
 
@@ -34,7 +54,7 @@ app.delete('/', (req, res, next) => {
 //req.body.firstName
 //cors
 //localhost:3000/example
-app.use('/example', router);
+app.use('/:id', router);
 
 //add middleware to handle errors and bad urls
 app.use((req, res, next) => {
