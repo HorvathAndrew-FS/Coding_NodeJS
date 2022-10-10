@@ -1,7 +1,8 @@
-const uppercase = (str) => {
-    return str.toUpperCase();
-}
+const uppercase = (str) => str.toUpperCase();
+
+const lowercase = (str) => str.toLowerCase();
 
 module.exports = {
-    uppercase
+    uppercase,
+    lowercase
 };
