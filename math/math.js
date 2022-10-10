@@ -1,32 +1,20 @@
-const add = (num1, num2) => {
-    let result = num1 + num2;
-    return result;
-};
+// const add = (num1, num2) => {
+//     let result = num1 + num2;
+//     return result;
+// };
 
-const subt = (num1, num2) => {
-    let result = num1 - num2;
-    return result;
-}
+const add = (num1, num2) => num1 + num2;
 
-const div = (num1, num2) => {
-    let result = num1 / num2;
-    return result;
-}
+const subt = (num1, num2) => num1 - num2;
 
-const mult = (num1, num2) => {
-    let result = num1 * num2;
-    return result;
-}
+const div = (num1, num2) => num1 / num2;
 
-const sqRoot = (num1) => {
-    let result = Math.sqrt(num1);
-    return result;
-}
+const mult = (num1, num2) => num1 * num2;
 
-const maxNum = (num1, num2, num3, num4, num5) => {
-    let result = Math.max(num1, num2, num3, num4, num5);
-    return result;
-}
+const sqRoot = (num1) => Math.sqrt(num1);
+
+const maxNum = (...arr) => Math.max(...arr);
+
 module.exports = {
     add,
     subt,

@@ -29,7 +29,7 @@ describe('Testing number inputs', () => {
     });
 
     test('should give the largest or max number from a set of numbers', () => {
-        expect(maxNum(2, 7, -1645, 201, 3.141)).toEqual(201);
+        expect(maxNum(2, 7)).toEqual(7);
     });
 });
 
