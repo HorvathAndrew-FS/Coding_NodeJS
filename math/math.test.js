@@ -9,7 +9,7 @@ const {
 
 describe('Testing number inputs', () => {
     test('should add two numbers together', () => {
-        expect(add(2, 4)).toEqual(6);
+        expect(add(3, 4)).toEqual(7);
     });
 
     test('should subtract one number from another', () => {
@@ -29,7 +29,7 @@ describe('Testing number inputs', () => {
     });
 
     test('should give the largest or max number from a set of numbers', () => {
-        expect(maxNum(2, 7)).toEqual(7);
+        expect(maxNum(2, 7, 10, 566, 789, 1, 3.141, 12, 90984375987)).toEqual(90984375987);
     });
 });
 
