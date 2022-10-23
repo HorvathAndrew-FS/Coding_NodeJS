@@ -4,7 +4,7 @@ const add = (num1, num2) => num1 + num2;
 //subtracting 1 number from another
 const subt = (num1, num2) => num1 - num2;
 
-//dividing one number from another
+//dividing one number from another  
 const div = (num1, num2) => num1 / num2;
 
 //multiplying one number by another
